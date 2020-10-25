@@ -1,0 +1,148 @@
+[mlimg]
+[xlang:en]
+====  WRAPS  a module for wrapping  ===
+
+A little module based on Duplicatable V3 (D3).
+This module require the latest ALTSYS installed.
+
+
+
+[b]HOW TO INSTALL THE 1ST ONE:[/b]
+
+(1) copy html/modules/wraps into your moduels/.
+
+(2) name the directory name as you like. (eg. mycompany)
+
+(3) make a new folder out of DocumentRoot  (eg. /home/yourhome/xoops_trust_path/)
+
+(4) insert a line into just after defining XOOPS_URL in mainfile.php.
+[code]
+        define('XOOPS_TRUST_PATH','/home/yourhome/xoops_trust_path'); // eg.
+[/code]
+(The step of (3)/(4) is the same as fastestcache hack)
+
+(5) make a directory 'modules' under the directory. (eg. /home/yourhome/xoops_trust_path/modules/)
+
+(6) make a directory 'wraps' under the directory. (eg. /home/yourhome/xoops_trust_path/wraps/)
+
+(7) copy xoops_trust_path/modules/wraps in this archive into XOOPS_TRUST_PATH/modules/ (eg. /home/yourhome/xoops_trust_path/modules)
+
+(8) make a directory which has same name as (2) under XOOPS_TRUST_PATH/wraps/ (eg. /home/yourhome/xoops_trust_path/wraps/mycompany)
+
+(9) copy any htmls,images into the directory for wrapping (eg. /home/yourhome/xoops_trust_path/wraps/mycompany/index.html)
+
+(10) install it in XOOPS modulesadmin
+
+(option) If you can use mod_rewrite, you will be happy by renaming .htaccess.rewrite into .htaccess :-)
+
+
+[b]HOW TO INSTALL ANOTHER MODULE INSTANCE:[/b]
+
+(1) copy html/modules/wraps into your moduels/.
+
+(2) name the directory name as you like. (eg. mypolicy)
+
+(3) make a directory which has same name as (2) under XOOPS_TRUST_PATH/wraps/ (eg. XOOPS_TRUST_PATH/wraps/mypolicy)
+
+(4) copy any htmls,images into the directory for wrapping (eg. XOOPS_TRUST_PATH/wraps/mypolicy/index.html)
+
+(5) install it in XOOPS modulesadmin
+
+That's all!
+
+
+
+[b]HOW TO UPDATE ALL MODULE INSTANCES:[/b]
+
+(1) copy/overwrite xoops_trust_path/modules/wraps in the new archive into XOOPS_TRUST_PATH/modules/ (eg. /home/yourhome/xoops_trust_path/modules/wraps)
+
+(2) update the module in XOOPS modules admin if necessary.
+
+That's all!
+
+
+
+[b]FAQ:[/b]
+
+Q) It only shows blank page when I click this module from main menu block.
+A) Check it:
+- Are they same named directory?
+--- XOOPS_ROOT_PATH/modules/(dir) and XOOPS_TRUST_PATH/wraps/(dir)
+- Does index.html exist in the directory for wrapping?
+
+
+
+[/xlang:en]
+[xlang:ja]
+====  ページラップモジュール WRAPS  ===
+
+Duplicatable V3 (D3) 技術を応用したページラップ専用モジュールです。
+XOOPS_TRUST_PATH についての設定も必要です。
+1.21以降、ALTSYS必須モジュールとなっています。
+
+
+[b]最初の１個をインストールする方法:[/b]
+
+(1) アーカイブを展開して、html/modules/wraps を moduels の下にコピー
+
+(2) ディレクトリ名は好きにつけてください。(例 mycompany)
+
+(3) DocumentRootの外に専用のディレクトリを作ります  (例 /home/yourhome/xoops_trust_path)
+
+(4) そのディレクトリのフルパスをmainfile.phpに記述します。場所はXOOPS_URL定義行の直後が良いでしょう。
+[code]
+        define('XOOPS_TRUST_PATH','/home/yourhome/xoops_trust_path');
+[/code]
+（このステップ(3)と(4)は、最速キャッシュハックと同じです）
+
+(5) XOOPS_TRUST_PATHの下にmodulesディレクトリを作ります (例 /home/yourhome/xoops_trust_path/modules)
+
+(6) XOOPS_TRUST_PATHの下にwrapsディレクトリを作ります (例 /home/yourhome/xoops_trust_path/wraps)
+
+(7) アーカイブのxoops_trust_path/modules/wrapsをXOOPS_TRUST_PATH/modules/にコピーします (例 /home/yourhome/xoops_trust_path/modules/wraps)
+
+(8) XOOPS_TRUST_PATH/wraps/ の下に(2)と同じ名前のディレクトリを作ります (例 /home/yourhome/xoops_trust_path/wraps/mycompany)
+
+(9) そのディレクトリにラップ用ファイルを好きに突っ込んでください (例 /home/yourhome/xoops_trust_path/wraps/mycompany/index.html)
+
+(10) XOOPSモジュールとしてインストールしてください。
+
+(おまけ) モジュールディレクトリ内の .htaccess.rewrite を.htaccessにリネームすると幸せになれるかもしれません。
+
+
+[b]もう一個モジュールをインストールする方法:[/b]
+
+(1) アーカイブの html/modules/wraps を moduels の下にコピー
+
+(2) ディレクトリ名を好きにつけてください (例 mypolicy)
+
+(3) XOOPS_TRUST_PATH/wraps/ の下に(2)と同じ名前のディレクトリを作ります (例 /home/yourhome/xoops_trust_path/wraps/mypolicy)
+
+(4) そのディレクトリにラップ用ファイルを好きに突っ込んでください (例 /home/yourhome/xoops_trust_path/wraps/mypolicy/index.html)
+
+(5) install it in XOOPS modulesadmin
+
+以上です！
+
+
+
+[b]モジュールをバージョンアップする方法:[/b]
+
+(1) アーカイブのxoops_trust_path/modules/wrapsをXOOPS_TRUST_PATH/modules/に上書きコピーします (例 /home/yourhome/xoops_trust_path/modules/wraps)
+
+(2) 必要に応じて、モジュールアップデートをかけます。
+
+たったこれだけですべてのモジュールがアップデートされたことになります。
+
+
+
+[b]FAQ:[/b]
+
+Q) メインメニューからクリックしても、真っ白ページが出るだけ
+A) 以下をチェックしてください
+- モジュールディレクトリ名とラップ用ディレクトリ名は同じになっていますか？
+--- XOOPS_ROOT_PATH/modules/(dir) と XOOPS_TRUST_PATH/wraps/(dir) です。
+- ラップ用ディレクトリ内にindex.htmlはちゃんと存在していますか？ 存在していない場合は、そのファイル名を明示的に指定する必要があります。
+
+
+[/xlang:ja]

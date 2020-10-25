@@ -1,0 +1,139 @@
+[mlimg]
+[xlang:en]
+
+[b]CHANGES:[/b]
+
+1.22 (2007/06/14)
+- fixed rewrite_mode file name limitation
+- renamed language files
+-- ja_utf8 (formerly japaneseutf)
+
+1.21 (2007/05/12)
+- changed the structure "altsys essential"
+- added language constants override system (with altsys>=0.5)
+- templatized mymenu (with altsys>=0.5)
+- added language files
+-- japaneseutf
+
+1.20 (2007/03/12) update the module
+- added a config of image caching for browser
+- added an assign of xoops_pagetitle
+- moved a file of main/mimes.php into include/
+- modified module_icon.php cacheable
+- fixed a typo in header('Expires'...) 1.20a
+- modified admin_menu for new altsys 1.20b
+
+1.12 (2007/01/10) update the module
+- added auto update indexes for searching
+- updated some D3 standard files
+
+1.11 (2006/10/27) update the module
+- added configuration to specify module top page
+- modified checking file name (1.11a)
+
+1.10 (2006/10/20) overwrite XOOPS_ROOT_PATH side also. (update the modules)
+- modified compatibility with Cube 2.1 beta
+
+1.06 (2006/09/14)
+- modified compatibility with Cube 2.1 on installing multiply
+- changed module's icon (thx argon)
+
+1.05 (2006/09/05)
+- modified compatibility with Cube 2.1 alpha4-c
+- modified global search can find recursively
+- added preload/ for future features
+
+1.04 (2006/08/09)
+- modified compatibility with Cube 2.1 alpha4
+
+1.03 (2006/07/18)
+- modified compatibility with Cube 2.1 alpha3
+
+1.02 (2006/06/22)
+- modified handling big files
+- modified handling ob filter
+
+1.01 (2006/06/18)
+- applied to XOOPS 2.2.x
+- fixed typo in admin_menu (thx kenchi)
+
+1.00 (2006/05/16)
+- 1st release
+- page wrapping
+- global search (for suin's search module) .html, .htm, .txt
+- rewrite mode
+- mymenu (altsys friendly)
+- XOOPS_TRUST_PATH
+- Duplicatable V3
+- dynamic module icon
+
+[/xlang:en]
+[xlang:ja]
+
+[b]更新履歴:[/b]
+
+1.22 (2007/06/14)
+- mod_rewriteモードでのファイル名制限の対応をした
+- 言語ファイル名変更
+-- ja_utf8 (旧japaneseutf)
+
+1.21 (2007/05/12)
+- 正式にaltsys必須とした
+- 文字定数オーバーライドシステムを導入した（要altsys-0.5以上）
+- mymenuのテンプレート化（要altsys-0.5以上）
+- 言語ファイル追加
+-- japaneseutf
+
+1.20 (2007/03/12) ※要モジュールアップデート
+- 画像などHTML以外のファイルをブラウザがキャッシュできる設定を追加
+- xoops_pagetitle のアサイン
+- main/mimes.php を include/mimes.php に場所移動
+- モジュールアイコンもキャッシュするように変更
+- ヘッダ関数の送出におけるtypoを修正 1.20a
+- 管理者メニュー項目を新altsysに対応 1.20b
+
+1.12 (2007/01/10) ※要モジュールアップデート
+- 検索用インデックスの自動更新機能追加
+- D3モジュールとしての標準機能をキャッチアップ
+
+1.11 (2006/10/27) ※要モジュールアップデート
+- モジュールトップページ指定を追加
+- ファイル名チェックをちょっとだけ修正 (1.11a)
+
+1.10 (2006/10/20) XOOPS_ROOT_PATH側も上書きする必要があります（要アップデート）
+- Cube 2.1 beta で管理画面が動かないことに対応
+
+1.06 (2006/09/14)
+- Cube 2.1 での一括インストールでfatalを出していたのを修正
+- モジュールアイコン差し替え (thx argon)
+
+1.05 (2006/09/05)
+- Cube 2.1 alpha4-c により沿ったコードに書き換えた
+- 検索機能がサブフォルダー内のHTML等にも対応
+- 将来のためにpreloadをroot_path側に持たせておいた
+
+1.04 (2006/08/09)
+- Cube 2.1 alpha4 との相性問題改善
+
+1.03 (2006/07/18)
+- Cube 2.1 alpha3 との相性問題改善
+
+1.02 (2006/06/22)
+- 大きなファイルへの対応
+- 出力バッファリングによる影響の除去
+
+1.01 (2006/06/18)
+- XOOPS 2.2.x への対応
+- menuにおけるlanguage typoの修正 (thx kenchi)
+
+1.00 (2006/05/16)
+- 最初のリリース
+- ページラップ機能
+- 検索機能 (suinさんのXOOPS検索対応) .html .htm .txt のみ
+- rewrite モード
+- mymenu (altsys 対応)
+- XOOPS_TRUST_PATH
+- Duplicatable V3
+- 動的生成モジュールアイコン
+
+[/xlang:ja]
